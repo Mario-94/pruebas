@@ -20,21 +20,20 @@ otras dos con la vocal que sigue.
 Ejemplos: Cons-truc-ción, ins-truc-ción. */
 
 const palabra = (cadena) => {
-    const v = /[a e i o u]/g//vocales
+
+    const v =  /[aeiou]/g;//vocales
+    
+ 
     const srt = cadena.replace(/\s/g, '');
     const lowered = srt.toLowerCase();
-    const splitted = lowered.split('');
-
-    for (i=1;i<10;i++){ 
-        document.write("<br><b>La tabla del " + i + ":</b><br>") 
-        for (j=1;j<10;j++) { 
-           document.write(i + " x " + j + ": ") 
-           document.write(i*j) 
-           document.write("<br>") 
-        } 
- }
+    const arr=[]
+for (let index = 0; index < lowered.length; index++) {
+    if (lowered.match(v)) {
        
+    }else{}
+    
+}  
 
 }    
 
-console.log(palabra("agujero pelotero"));
+console.log(palabra("agujero"));
